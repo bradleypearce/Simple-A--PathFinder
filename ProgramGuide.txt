@@ -1,0 +1,25 @@
+Pathfinding Program Guide
+By Bradley Pearce 
+
+1. Run the exe, the tilemap will load the data and output the nodes to the screen (providing the tilemap is in the release folder). 
+
+2. Whilst the game is running, you can use your mouse to define a start position (left click). Once you have defined a start position, the node will be highlighted yellow. 
+
+3. Once you've set a start position, you may left click on another node to define an end position. The node highlighted will be red. 
+
+4. Once a start and end position are set, the pathfinder will calculate the best path to that destination and the pink circle will move along the path. The path 
+will be coloured blue on screen.  
+
+5. Whilst the unit is moving along the path, you can define a new end position and the unit's path will update. 
+
+6. To reset both the start and end position and clear the path, right click. 
+
+NOTES: 
+
+- For the selection to work correctly, do not resize the screen. A limitation of SFML's mouse input is that it's only relative to the mouse's position in the window,
+if the window is resized the mouse still goes by the previous window size.  
+
+- Green nodes cost 30 to traverse, light blue nodes cost 5 to traverse, white notes cost 10 to traverse, black nodes are never considered for a path. 
+
+- You cannot select unwalkable nodes. 
+
